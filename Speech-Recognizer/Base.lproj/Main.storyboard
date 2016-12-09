@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4d8-r9-iZE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Speech_Recognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxm-jP-0nL">
+                                <rect key="frame" x="151" y="318" width="72" height="30"/>
+                                <state key="normal" title="Recognize"/>
+                                <connections>
+                                    <action selector="selectRecognizeWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hJ-yb-uEk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1a-OR-7su">
+                                <rect key="frame" x="166" y="391" width="42" height="30"/>
+                                <state key="normal" title="to File"/>
+                                <connections>
+                                    <segue destination="ENN-cp-tAF" kind="show" id="RXj-8k-rpr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x1a-OR-7su" firstAttribute="top" secondItem="Xxm-jP-0nL" secondAttribute="bottom" constant="43" id="3Wj-am-TtQ"/>
+                            <constraint firstItem="x1a-OR-7su" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OeJ-yC-aMo"/>
+                            <constraint firstItem="Xxm-jP-0nL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sr2-P5-cYg"/>
+                            <constraint firstItem="Xxm-jP-0nL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Y2K-Qx-Qdl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NXq-Tp-w3A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="137.18140929535232"/>
+        </scene>
+        <!--Recognize File View Controller-->
+        <scene sceneID="7wk-uM-Hku">
+            <objects>
+                <viewController id="ENN-cp-tAF" customClass="RecognizeFileViewController" customModule="Speech_Recognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ehh-F6-6qo"/>
+                        <viewControllerLayoutGuide type="bottom" id="I1s-YD-Pyu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P67-BR-Jvn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSO-ww-67L">
+                                <rect key="frame" x="151" y="318" width="72" height="30"/>
+                                <state key="normal" title="Recognize"/>
+                                <connections>
+                                    <action selector="selectRecognize:" destination="ENN-cp-tAF" eventType="touchUpInside" id="VXp-LC-av4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KSO-ww-67L" firstAttribute="centerY" secondItem="P67-BR-Jvn" secondAttribute="centerY" id="Oy8-qJ-Cb0"/>
+                            <constraint firstItem="KSO-ww-67L" firstAttribute="centerX" secondItem="P67-BR-Jvn" secondAttribute="centerX" id="l0R-wr-oHb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lzf-cO-5MB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B0K-fx-Zu1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4d8-r9-iZE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XnO-Bv-6Mo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="q5F-8T-DgE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8d4-ST-cjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488.80000000000001" y="-546.47676161919048"/>
+        </scene>
+    </scenes>
+</document>
