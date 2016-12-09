@@ -14,7 +14,6 @@
 		3938BDCE1DF879C100DFD799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3938BDCC1DF879C100DFD799 /* LaunchScreen.storyboard */; };
 		3938BDD91DF879C100DFD799 /* Speech_RecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938BDD81DF879C100DFD799 /* Speech_RecognizerTests.swift */; };
 		3938BDE41DF879C100DFD799 /* Speech_RecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938BDE31DF879C100DFD799 /* Speech_RecognizerUITests.swift */; };
-		3938BDF41DF88F2100DFD799 /* onedirection.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3938BDF31DF88F2100DFD799 /* onedirection.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		3938BDDF1DF879C100DFD799 /* Speech-RecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Speech-RecognizerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3938BDE31DF879C100DFD799 /* Speech_RecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speech_RecognizerUITests.swift; sourceTree = "<group>"; };
 		3938BDE51DF879C100DFD799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3938BDF31DF88F2100DFD799 /* onedirection.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = onedirection.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +97,6 @@
 		3938BDC21DF879C100DFD799 /* Speech-Recognizer */ = {
 			isa = PBXGroup;
 			children = (
-				3938BDF31DF88F2100DFD799 /* onedirection.mp3 */,
 				3938BDC31DF879C100DFD799 /* AppDelegate.swift */,
 				3938BDC51DF879C100DFD799 /* ViewController.swift */,
 				3938BDC71DF879C100DFD799 /* Main.storyboard */,
@@ -239,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3938BDCE1DF879C100DFD799 /* LaunchScreen.storyboard in Resources */,
-				3938BDF41DF88F2100DFD799 /* onedirection.mp3 in Resources */,
 				3938BDCB1DF879C100DFD799 /* Assets.xcassets in Resources */,
 				3938BDC91DF879C100DFD799 /* Main.storyboard in Resources */,
 			);
