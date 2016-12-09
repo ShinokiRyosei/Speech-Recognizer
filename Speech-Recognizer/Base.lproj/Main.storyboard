@@ -28,18 +28,9 @@
                                     <action selector="selectRecognizeWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hJ-yb-uEk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1a-OR-7su">
-                                <rect key="frame" x="166" y="391" width="42" height="30"/>
-                                <state key="normal" title="to File"/>
-                                <connections>
-                                    <segue destination="ENN-cp-tAF" kind="show" id="RXj-8k-rpr"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="x1a-OR-7su" firstAttribute="top" secondItem="Xxm-jP-0nL" secondAttribute="bottom" constant="43" id="3Wj-am-TtQ"/>
-                            <constraint firstItem="x1a-OR-7su" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OeJ-yC-aMo"/>
                             <constraint firstItem="Xxm-jP-0nL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sr2-P5-cYg"/>
                             <constraint firstItem="Xxm-jP-0nL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Y2K-Qx-Qdl"/>
                         </constraints>
@@ -49,37 +40,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1079.2" y="137.18140929535232"/>
-        </scene>
-        <!--Recognize File View Controller-->
-        <scene sceneID="7wk-uM-Hku">
-            <objects>
-                <viewController id="ENN-cp-tAF" customClass="RecognizeFileViewController" customModule="Speech_Recognizer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ehh-F6-6qo"/>
-                        <viewControllerLayoutGuide type="bottom" id="I1s-YD-Pyu"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="P67-BR-Jvn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSO-ww-67L">
-                                <rect key="frame" x="151" y="318" width="72" height="30"/>
-                                <state key="normal" title="Recognize"/>
-                                <connections>
-                                    <action selector="selectRecognize:" destination="ENN-cp-tAF" eventType="touchUpInside" id="VXp-LC-av4"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="KSO-ww-67L" firstAttribute="centerY" secondItem="P67-BR-Jvn" secondAttribute="centerY" id="Oy8-qJ-Cb0"/>
-                            <constraint firstItem="KSO-ww-67L" firstAttribute="centerX" secondItem="P67-BR-Jvn" secondAttribute="centerX" id="l0R-wr-oHb"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lzf-cO-5MB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1756" y="136.28185907046478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B0K-fx-Zu1">

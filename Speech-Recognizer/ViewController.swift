@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         else {
             
             do {
-                
+                print("start recording")
                 try startRecording()
             }
             catch let error {
